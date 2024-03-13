@@ -1,0 +1,167 @@
+:root {
+  /*size*/
+  --size8: 0.5rem;
+  --size10: 0.625rem;
+  --size12: 0.75rem;
+  --size14: 0.875rem;
+  --size16: 1rem;
+  --size18: 1.125rem;
+  --size20: 1.25rem;
+  --size22: 1.375rem;
+  --size24: 1.5rem;
+  --size26: 1.625rem;
+  --size28: 1.75rem;
+  --size30: 1.875rem;
+  --size52: 3.25rem;
+  --size50: 3.125rem;
+  --size60: 3.75rem;
+  --size63: 3.9375rem;
+
+  /*Paleta de Colores*/
+  --linear_bg: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+  --bitcoin_orage: #f7931a;
+  --Soft_Orange: #ffe9d4;
+  --secundary_blue: #1a9af7;
+  --soft_blue: #e7f5ff;
+  --warm_black: #201e1c;
+  --Warm_Black_1: #282623;
+  --just_while: #ffffff;
+  --while_buton: #faf8f7;
+  --orange_primary: #ff9536;
+  --gray:#757575;
+
+  /*tipografia*/
+  --h1-mobile: normal 700 var(--size24) / var(--size26) "DM Sans", sans-serif;
+  --h2-Mobile: normal 500 var(--size14) / var(--size18) "DM Sans", sans-serif;
+  --inter-large: normal var(--size52) / var(--size63) "Inter", sans-serif;
+  --inter-small: normal var(--size12) / var(--size16) "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+html {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Posicionamiento
+Modelo de caja
+Tipografía y texto
+Visual
+Miscelánea */
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 20rem;
+  height: 20.875rem;
+  text-align: center;
+  background: var(--linear_bg);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header img {
+  width: 9.375rem;
+  height: 1.5rem;
+  margin-top: var(--size60);
+  align-self: center;
+}
+.header__title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 288px;
+  margin-top: 2.5rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header__title-container h1 {
+  font: var(--h1-mobile);
+  color: var(--just_while);
+  margin-bottom: 24px;
+}
+.header__title-container p {
+  font: var(--h2-Mobile);
+  color: var(--Soft_Orange);
+}
+
+.header__title-container .header__button {
+  position: absolute;
+  top: 270px;
+  left: calc(50% - 7.375rem);
+  display: block;
+  width: 14.3125rem;
+  height: 3rem;
+  margin-top: 2.1875rem;
+  padding: var(--size12) var(--size16);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font: var(--h2-Mobile);
+  background-color: var(--while_buton);
+  box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.16);
+  border-radius: 4px;
+  color: var(--warm_black);
+}
+.header__button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../asset/icon/Vector.svg");
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--just_while);
+}
+.exchange__container{
+    width: 100%;
+    height: auto;
+    padding-top: 5rem;
+    padding-bottom: 1.875rem;
+    text-align: center;
+}
+.exchange__backgroundImage{
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 0 auto;
+    margin-bottom: 3.125rem;
+    background-image: url("../asset/img/Bitcoin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.exchange__container__text{
+    width: 90%;
+    min-width: 18rem;
+    max-width: 56.25rem;
+    margin: 0 auto;
+}
+.exchange__container__text h2{
+    font: var(--h1-mobile);
+    color: var(--warm_black);
+    margin-bottom: 2rem;
+}
+.exchange__container__text p{
+    font: var(--h2-Mobile);
+    font-weight: 500;
+    color: var(--gray);
+}
+
+/* Posicionamiento
+Modelo de caja
+Tipografía y texto
+Visual
+Miscelánea */
