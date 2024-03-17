@@ -28,11 +28,14 @@
   --just_while: #ffffff;
   --while_buton: #faf8f7;
   --orange_primary: #ff9536;
-  --gray:#757575;
+  --gray: #757575;
 
   /*tipografia*/
   --h1-mobile: normal 700 var(--size24) / var(--size26) "DM Sans", sans-serif;
   --h2-Mobile: normal 500 var(--size14) / var(--size18) "DM Sans", sans-serif;
+  --h3-Mobile: normal 700 var(--size18) / var(--size24) "DM Sans", sans-serif;
+  --text-Mobile: normal 500 var(--size16) / var(--size20) "Inter", sans-serif;
+  --text-Mobile2: normal 400 var(--size14) / var(--size16) "Inter", sans-serif;
   --inter-large: normal var(--size52) / var(--size63) "Inter", sans-serif;
   --inter-small: normal var(--size12) / var(--size16) "Inter", sans-serif;
 }
@@ -113,51 +116,163 @@ header img {
   border-radius: 4px;
   color: var(--warm_black);
 }
-.header__button span{
-    display: inline-block;
-    width: 13px;
-    height: 8px;
-    margin-left: 10px;
-    background-image: url("../asset/icon/Vector.svg");
-    cursor: pointer;
+.header__button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("../asset/icon/Vector.svg");
+  cursor: pointer;
 }
-main{
-    width: 100%;
-    height: auto;
-    background-color: var(--just_while);
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--while_buton);
 }
-.exchange__container{
-    width: 100%;
-    height: auto;
-    padding-top: 5rem;
-    padding-bottom: 1.875rem;
-    text-align: center;
+.exchange__container {
+  width: 100%;
+  height: auto;
+  padding-top: 5rem;
+  padding-bottom: 1.875rem;
+  text-align: center;
 }
-.exchange__backgroundImage{
-    width: 12.5rem;
-    height: 12.5rem;
-    margin: 0 auto;
-    margin-bottom: 3.125rem;
-    background-image: url("../asset/img/Bitcoin.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.exchange__backgroundImage {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+  background-image: url("../asset/img/Bitcoin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.exchange__container__text{
-    width: 90%;
-    min-width: 18rem;
-    max-width: 56.25rem;
-    margin: 0 auto;
+.exchange__container__text {
+  width: 90%;
+  min-width: 18rem;
+  max-width: 56.25rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
-.exchange__container__text h2{
-    font: var(--h1-mobile);
-    color: var(--warm_black);
-    margin-bottom: 2rem;
+.exchange__container__text h2 {
+  font: var(--h1-mobile);
+  color: var(--warm_black);
+  margin-bottom: 2rem;
 }
-.exchange__container__text p{
-    font: var(--h2-Mobile);
-    font-weight: 500;
-    color: var(--gray);
+.exchange__container__text p {
+  font: var(--h2-Mobile);
+  font-weight: 500;
+  color: var(--gray);
+
+  }
+ 
+.exchange__seccion--table{
+  display: flex;
+  flex-direction: row;
+  width: 200%;
+  gap: 50px;
+  transition: transform 0.5s ease-in-out;
+ 
+
+ 
+}
+.carrucel--0{
+  transform: translateX(-50%);
+}
+
+.carrucel--100{
+  transform: translateX(0%);
+}
+
+
+.exchange__table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 12.3125rem;
+
+  margin: 0 auto;
+}
+.exchange__table__title {
+  align-self: start;
+  font: var(--h3-Mobile);
+  color: var(--orange_primary);
+}
+.exchange__table__title--blue{
+  color: #1A9AF7;
+  
+}
+td {
+  width: 6.3125rem;
+  height: 2.4375rem;
+  background-color: var(--just_while);
+  border: none;
+  font: var(--text-Mobile);
+  color: #b5b0ac;
+}
+table {
+  margin-top: 0.75rem;
+  border-radius: 2px;
+}
+.arrow__right{
+  position: relative;
+  top: -84px;
+  right:-225px ;
+  width: 0.75rem;
+  height: 0.4631rem;
+  background-image: url(../asset/icon/Vector.svg);
+  transform: rotate(270deg);
+  
+  
+}
+.arrow__left{
+  position: relative;
+  top: -84px;
+  right:24px ;
+  width: 0.75rem;
+  height: 0.4631rem;
+  background-image: url(../asset/icon/Vector.svg);
+  transform: rotate(90deg);
+  
+}
+
+.table__right {
+  font: var(--text-Mobile2);
+}
+.table--radius__top__right {
+  border-top-right-radius: 0.3125rem;
+}
+.table--radius__button__right {
+  border-bottom-right-radius: 0.3125rem;
+}
+table .table__top_let {
+  border-top-left-radius: 0.125rem;
+}
+
+.table__right span {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url("../asset/icon/trending-down\ 1.svg");
+}
+.table__right .arrow_up {
+  background-image: url("../asset/icon/trending-up\ 1.svg"); /* Down arrow for even */
+}
+
+.container--actualization{
+  margin: var(--size16);
+}
+.actualization{
+width: 10.8125rem;
+height: 1.9375rem;
+padding: var(--size8) var(--size8);
+background-color: var(--Soft_Orange);
+font: var( --inter-small);
+}
+.actualization--blue{
+  background-color:#E7F5FF;
+  ;
 }
 
 /* Posicionamiento
