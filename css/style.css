@@ -275,6 +275,81 @@ font: var( --inter-small);
   ;
 }
 
+/*section producto*/
+.producto__section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--warm_black);
+  padding-bottom: 24px;
+ 
+}
+.producto__icono__patata{
+position: absolute;
+top: -12px;
+width: 40.57px;
+height: 24.01px;
+}
+.producto__icono{
+  width: 24px;
+  height: 24px;
+}
+.producto__text__contenido{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 288px;
+  height:94px;
+  margin-top: 2rem;
+}
+.producto__h2{
+  font: var( --h1-mobile);
+  color: var(--just_while);
+  text-align: center;
+}
+.producto__text{
+  font: var( --h2-Mobile);
+  color: #808080;
+}
+.producto__container__valor{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 16px;
+width: 288px;
+background-color:var(--warm_black);
+}
+.producto__article{
+
+  display: flex;
+  flex-direction: column;
+  background-color:var(--Warm_Black_1) ;
+  margin-top: 24px;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 5px;
+
+}
+
+.producto__article h3{
+  color:var(--just_while) ;
+  font:  --h3-Mobile;
+  line-height: 18px;
+}
+.producto__article p{
+  color:#808080;
+  font: var(--h2-Mobile);
+
+}
+
+
+
 /* Posicionamiento
 Modelo de caja
 Tipografía y texto
