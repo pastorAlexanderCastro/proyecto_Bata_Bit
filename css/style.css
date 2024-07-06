@@ -347,9 +347,15 @@ background-color:var(--warm_black);
   font: var(--h2-Mobile);
 
 }
+.conocelo__contaner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .conocelo{
-  width: 320px;
+  width: 100%;
   height: auto;
 }
 .conocelo__image{
@@ -368,12 +374,14 @@ background-color:var(--warm_black);
 }
 
 .plan__container{
+  width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 75px;
 margin-bottom: 75px;
+
 
 }
 
@@ -396,3 +404,68 @@ Modelo de caja
 Tipografía y texto
 Visual
 Miscelánea */
+.container_card{
+  
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 11.875rem;
+  
+  padding: 30px 10px 20px 10px;
+  gap: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 0px #59491E29;
+  
+
+}
+.card-burbuja{
+  position: absolute;
+  top:-15px;
+  width: 101px;
+  height: 31px;
+  padding: 8px;
+  font:var(--inter-small);
+  color: var(--just_while);
+  background-color: var(--bitcoin_orage);
+  border-radius: 8px;
+}
+.card__precio{
+  font: var(--inter-large);
+  font-weight: bold;
+}
+.card__precio span{
+  position: relative;
+  top: -30px;
+  font: var(--inter-small);
+  font-weight: bold;
+}
+.card__promocion{
+  font: var(--inter-small);
+  color: var(--gray);
+  text-align: center;
+}
+.card__button{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+  width: 151px;
+  height: 48px;
+  padding: 12px 14px 12px 14px;
+  font-family:inherit;
+  font-size: var(--size14);
+  line-height: 18.23px;
+  font-weight: 700;  
+  border:2px solid var(--bitcoin_orage);
+  border-radius: 4px;
+  
+}
