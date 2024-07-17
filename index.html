@@ -10,12 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
   </head>
@@ -41,7 +43,7 @@
             <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
         </div>
         <section class="exchange__seccion--table">
-            <div class="exchange__table">
+            <div class="exchange__table table-left">
                 <p class="exchange__table__title">Monedas</p>
                 <div class="exchange__table__container">
                     <table>
@@ -62,13 +64,13 @@
                             <td class="table__right table--radius__button__right">$4.96 <span class="arrow_up"></span></td>
                         </tr>
                     </table>
-                    <figure class="arrow__right"></figure>
+                   
                     <div class="container--actualization">
                         <p class="actualization"><b>Actualizado</b>: 19 Julio 23:45</p>
                     </div>
                 </div>
             </div>
-            <div class="exchange__table">
+            <div class="exchange__table table-right">
                 <p class="exchange__table__title exchange__table__title--blue">Comisiones</p>
                 <div class="exchange__table__container">
                     <table>
@@ -89,7 +91,7 @@
                             <td class="table__right table--radius__button__right">$ 14.96 <span class="arrow_up"></span></td>
                         </tr>
                     </table>
-                    <figure class="arrow__left"></figure>
+                    
                     <div class="container--actualization">
                         <p class="actualization actualization--blue"><b>Actualizado</b>: 19 Julio 23:45</p>
                     </div>
@@ -145,37 +147,27 @@
           <figure class="conocelo__image">
             <h2 class="conocelo__title">Conócelo hoy.</h3>
           </figure>
-          <div class="plan__container">
-            
-            
-              <h2 class="plan__title">Escoge el plan que mejor se ajuste a ti.</h2>
-              <p class="plan__parrafo">Cualquier plan te da acceso completo a <br>nuestra plataforma.</p>
-            </div>
-           <section class="container_card">
-            <article class="card">
-              <span class="card-burbuja">Recomendado</span>
-              <h3 class="card_title">Pago Anual</h3>
-              <p class="card__precio"><span>$</span>5</p>
-              <p class="card__promocion">*Plan básico para menternete <br>informado</p>
-              <button class="card__button">Escoger este <span></span><img src="./asset/icon/arrow-right 1.svg" alt=""></button>
-            </article>
-            <article class="card">
-              <span class="card-burbuja">Recomendado</span>
-              <h3 class="card_title">Pago Anual</h3>
-              <p class="card__precio"><span>$</span>49</p>
-              <p class="card__promocion">*Ahorras $129 comparado <br> al plan mensual.</p>
-              <button class="card__button">Escoger este <span></span><img src="./asset/icon/arrow-right 1.svg" alt=""></button>
-            </article>
-            <article class="card">
-              <span class="card-burbuja">Recomendado</span>
-              <h3 class="card_title">Pago Anual</h3>
-              <p class="card__precio"><span>$</span>99</p>
-              <p class="card__promocion">*Ahorras $999+ comparado con el plan anual</p>
-              <button class="card__button">Escoger este <span></span><img src="./asset/icon/arrow-right 1.svg" alt=""></button>
-            </article>
-           </section>
           </div>
         </div>
+      </section>
+      <section id="planes" class="main-planes-container">
+        <div class="plans--title">
+          <h2 class="">Escoge el plan que mejor se ajuste a ti.</h2>
+          <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+        </div>
+        <section class="plans-container--slider">
+          <article class="plans-container--card">
+            <p class="recommended">Recomendado</p>
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Anual</h3>
+              <p class="plan-card--price"> <span>$</span>99</p>
+              <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+              <button class="plan-card--ca">Escoger este <span></span></button>
+            </div>
+          </article>
+        </section>
+
+
       </section>
       <section class="preguntas">
          <h2 class="preguntas__titulo">
