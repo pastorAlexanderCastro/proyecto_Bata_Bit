@@ -32,7 +32,7 @@
 
   /*tipografia*/
   --h1-mobile: normal 700 var(--size24) / var(--size26) "DM Sans", sans-serif;
-  
+
   --h2-Mobile: normal 500 var(--size14) / var(--size18) "DM Sans", sans-serif;
   --h3-Mobile: normal 700 var(--size18) / var(--size24) "DM Sans", sans-serif;
   --text-Mobile: normal 500 var(--size16) / var(--size20) "Inter", sans-serif;
@@ -174,10 +174,7 @@ main {
   gap: 50px;
 }
 
-
-
-*/
-.exchange__table {
+*/ .exchange__table {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -186,9 +183,6 @@ main {
   max-width: 12.3125rem;
   margin: 0 auto;
 }
-
-
-
 
 .exchange__table__title {
   align-self: start;
@@ -277,7 +271,6 @@ table .table__top_let {
   height: auto;
   background-color: var(--warm_black);
   padding-bottom: 24px;
-  
 }
 .producto__icono__patata {
   position: absolute;
@@ -311,27 +304,25 @@ table .table__top_let {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  width:100%;
+  width: 100%;
   justify-content: center;
   max-width: 750px;
   margin-top: 20px;
   background-color: var(--warm_black);
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 .producto__article {
   display: flex;
   flex-direction: column;
-  width:100%;
-  max-width:345px ;
-  height:134px ;
+  width: 100%;
+  max-width: 345px;
+  height: 134px;
   background-color: var(--Warm_Black_1);
- 
+
   padding: 16px;
   gap: 8px;
   border-radius: 5px;
-
 }
 
 .producto__article h3 {
@@ -360,10 +351,12 @@ table .table__top_let {
   justify-content: flex-start;
   padding-top: 60px;
   width: 100%;
-  height: 387px;
+  min-width: 320px;
+  height: 50vh;
   background-image: url("../asset/img/bitcoinbaby\ 1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: var(--just_while);
 }
 .conocelo__title {
@@ -401,53 +394,121 @@ Visual
 Miscelánea */
 
 /*seccion card promociones*/
-.main-planes-container{
-width: 100%;
-min-width: 320px;
-padding-bottom: 70px;
-text-align: center;
+.main-planes-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-.plans--title{
+
+.plans--title {
   width: 90%;
   min-width: 288px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 50px;
- 
 }
-.plans--title h2{
-padding-top: 50px;
-font-size: 2.4rem;
-font-weight: bold;
-line-height: 2.6rem;
-color: var(--warm_black);
-
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--warm_black);
 }
-.plans--title p{
+.plans--title p {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #757575;
 }
-
-
-.plans-container--card{
+.plans-container--slider{
+  display: flex;
+  
+  
+  height: 316px;
+  overflow-x:scroll ;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  
+  }
+.plans-container--card {
   position: relative;
+  scroll-snap-align:center;
   width: 70%;
-  min-width: 230px;
-  max-width: 300px;
+
+  min-width: 190px;
+  max-width: 230px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 10px 0;
   padding: 0 15px;
   background-color: var(--just_while);
-  border-radius: 15px ;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
-
+}
+.recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  left: calc(50% - 60px);
+  top: -15px;
+  font-size: var(--size12);
+  font-weight: 700;
+  padding: 6px;
+  text-align: center;
+  background-color: var(--bitcoin_orage);
+  border-radius: 8px;
+  color: var(--just_while);
+}
+.plan-card--title {
+  padding-top: 30px;
+  font-size: var(--size14);
+  font-weight: var(500);
+  line-height: var(--size18);
+  color: var(--warm_black);
+}
+.plan-card--price {
+  padding: 5px 0;
+  font-size: var(--size52);
+  font-weight: bold;
+  line-height: var(--size63);
+  color: var(--warm_black);
+}
+.plan-card--price span {
+  position: absolute;
+  top: 40px;
+  left: 55px;
+  font-size: var(--size12);
+  font-weight: bold;
+}
+.plan-card--saving {
+  font-size: var(--size12);
+  color: #757575;
 }
 
+.plan-card--ca{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--while_buton);
+  border: 2px solid var(--bitcoin_orage);
+  border-radius: 4px;
+  font-weight: bold;
+  line-height: var(--size18);
+  font-size: var(--size14);
+  color: var(--warm_black);
+  font-family:"DM Sans", sans-serif ;
+}
 
+.plan-card--ca span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/asset/icon/arrow-right\ 1.svg");
+  vertical-align: bottom;
+}
 /*pregutas*/
 .preguntas {
   display: flex;
@@ -455,13 +516,19 @@ color: var(--warm_black);
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: 466px;
   height: auto;
   padding: 20px 10px;
+  margin: 0 auto;
 }
 .preguntas__titulo {
   font: var(--h1-mobile);
   text-align: center;
   margin-bottom: 15px;
+}
+.preguntas__container{
+  width: 100%;
+  max-width: 490px;
 }
 details {
   font: var(--h2-Mobile);
@@ -475,6 +542,7 @@ summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 
   list-style: none;
 }
@@ -502,141 +570,23 @@ footer {
   background-color: var(--bitcoin_orage);
   border: none;
 }
-footer figure{
- width: 75px;
- height: 50px;
- background-image: url(/asset/img/Logo--footer.png);
- background-repeat: no-repeat;
-background-position: top;
-background-size: contain;
-  
+footer figure {
+  width: 75px;
+  height: 50px;
+  background-image: url(/asset/img/Logo--footer.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  l
+
 }
-footer ol{
+footer ol {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   list-style: none;
   color: var(--just_while);
-  font:var(--h2-Mobile);
+  font: var(--h2-Mobile);
 }
 
 
-/*
-@media (min-width: 768px) {
-  
-  header{
-    height:28.125rem;
-  }
-  .header__title-container h1{
-   
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 42px;
-    width: 464px;
-  }
-  .header__title-container{
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .header__title-container .header__button{
-    top: 390px;
-  }
-  .header__title-container p{
-    font-size: var(--size20);
-    font-weight: 500;
-    line-height: 24px;
-    width: 23.875rem;
-    text-align: center;
-  }
-  .exchange__container__text{
-    max-width: 29.125rem;
-  }
-
-  .exchange__container__text h2{
-    font-size: 2.5rem;
-   line-height: 2.625rem;
-
-  }
-  .exchange__container__text p{
-    font-size: var(--size20);
-    line-height: 24px;
-  }
-  .exchange__seccion--table{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .exchange__table{
-    margin: 15px;
-  }
-  .arrow__right,.arrow__left{
-    display: none;
-  }
-  .producto__article{
-    max-width: 21.5625rem;
-  }
-  .producto__container__valor{
-    width: 900px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .conocelo__image{
-    justify-content: center;
-    background-image: url(/asset/img/bitcoinbaby\ 2.png);
-    width: 100%;
-    height: 299px;
-    background-size:cover ;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .conocelo__image h2{
-    font-size: 40px;
-    line-height: 42px;
-    font-weight: 700;
-    padding-top: 0px;
-  }
-  .plan__title{
-    font-size: 40px;
-    line-height: 42px;
-    max-width: 466px;
-    
-  }
-  .plan__parrafo{
-    font-size: var(--size20);
-  }
-  .preguntas__titulo{
-    
-    font-size:40px ;
-    font-weight: 700;
-    line-height: 42px;
-  }
-
-  .preguntas__container{
-    width: 466px;
-    font-family: 20px;
-    font-weight: 500px;
-    line-height: 24px;
-  }
-
-  footer ol {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: s;
-    height:24px ;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    margin: 0 auto ;
-
-  }
-  footer figure{
-    width: 166px;
-    height: 111.2px;
-  }
-
-}
-*/

@@ -19,12 +19,13 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/table.css" media="(min-width:768px)">
     <title>Document</title>
   </head>
   <body>
     <header>
      
-        <img src="./asset/img/logo.png" alt="logo Batabit" />
+        <img  loading="lazy"   src= "./asset/img/logo.png" alt="logo Batabit" />
      
       <div class="header__title-container">
         <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
@@ -119,14 +120,14 @@
         </article>
         <article class="producto__article">
           <figure class="producto__icono">
-            <img src="./asset/icon/eye.svg" alt="Icon eye">
+            <img loading="lazy" src="./asset/icon/eye.svg" alt="Icon eye">
           </figure>
           <h3>No hay tasas escondidas</h3>
           <p>Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
         </article>
         <article class="producto__article">
           <figure class="producto__icono">
-            <img src="./asset/icon/dollar-sign.svg" alt="Icon dollar">
+            <img loading="lazy" src="./asset/icon/dollar-sign.svg" alt="Icon dollar">
           </figure>
          
           <h3>Compara monedas</h3>
@@ -134,7 +135,7 @@
         </article>
         <article class="producto__article">
           <figure class="producto__icono">
-            <img src="./asset/icon/check-circle.svg" alt="icono check">
+            <img loading="lazy" src="./asset/icon/check-circle.svg" alt="icono check">
           </figure>
           <h3>Información confiable</h3>
           <p>Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
@@ -157,11 +158,29 @@
         </div>
         <section class="plans-container--slider">
           <article class="plans-container--card">
+            
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Pago Anual</h3>
+              <p class="plan-card--price"> 5<span>$</span></p>
+              <p class="plan-card--saving">**Plan básico para mantenerte informado.</p>
+              <button class="plan-card--ca">Escoger este <span></span></button>
+            </div>
+          </article>
+          <article class="plans-container--card">
             <p class="recommended">Recomendado</p>
             <div class="plan-info-container">
               <h3 class="plan-card--title">Pago Anual</h3>
-              <p class="plan-card--price"> <span>$</span>99</p>
+              <p class="plan-card--price"> 49<span>$</span></p>
               <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+              <button class="plan-card--ca">Escoger este <span></span></button>
+            </div>
+          </article>
+          <article class="plans-container--card">
+            
+            <div class="plan-info-container">
+              <h3 class="plan-card--title">Acceso de por vida</h3>
+              <p class="plan-card--price"> 99<span>$</span></p>
+              <p class="plan-card--saving">**Ahorras $999+ comparado al plan anual..</p>
               <button class="plan-card--ca">Escoger este <span></span></button>
             </div>
           </article>
